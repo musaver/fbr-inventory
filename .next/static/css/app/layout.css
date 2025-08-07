@@ -1883,6 +1883,10 @@ p, span, div{
 .text-background\/70{
   color: hsl(var(--background) / 0.7);
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
 .text-card-foreground{
   color: hsl(var(--card-foreground));
 }
@@ -1937,10 +1941,6 @@ p, span, div{
 }
 .text-white\/90{
   color: rgb(255 255 255 / 0.9);
-}
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 .underline-offset-4{
   text-underline-offset: 4px;

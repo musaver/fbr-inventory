@@ -11,11 +11,10 @@ export function HeroSection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-title font-bold leading-tight tracking-tight">
-              Simplify Your Inventory,{" "}
-              Boost Your Business
+              Accounting Made Easy for Pakistan{" "}
             </h1>
             <p className="text-xl font-body text-white/90 leading-relaxed max-w-lg font-medium">
-              All-in-one inventory management solution designed to streamline your operations and increase efficiency.
+              Digitally integerated with FBR, All-in-one inventory management solution designed to streamline your operations and increase efficiency.
             </p>
           </div>
           
@@ -44,13 +43,11 @@ export function HeroSection() {
         </div>
 
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <Image 
             src={heroImage} 
             alt="Inventory Management Dashboard" 
-            className="relative w-full h-auto rounded-3xl shadow-strong transform group-hover:scale-[1.02] transition-transform duration-500"
+            className="relative w-full h-auto rounded-sm shadow-strong transform group-hover:scale-[1.02] transition-transform duration-500"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl group-hover:from-primary/10 transition-colors duration-500"></div>
           
           {/* Floating elements for interactivity */}
           <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
