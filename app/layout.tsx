@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryProvider } from "./providers";
 
 export const metadata: Metadata = {
-  title: "StockZen - Inventory Management Solution",
+  title: "Hisaab360 - Inventory Management Solution",
   description: "Complete inventory management solution for businesses",
 };
 
