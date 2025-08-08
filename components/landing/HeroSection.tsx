@@ -1,6 +1,9 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
-import { Play, ArrowRight, Clock, CreditCard, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Play, ArrowRight, Clock, CreditCard, Sparkles, Contact } from "lucide-react";
 import Image from "next/image";
 import heroImage from "@/assets/hero-inventory.png";
 
@@ -19,7 +22,12 @@ export function HeroSection() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="group bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-glow rounded-full border-2 border-white/20 hover:border-white/40 font-space font-semibold">
+            <Button onClick={() => {
+              const contactSection = document.getElementById('contact');
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'instant' });
+              }
+            }} size="lg" className="group bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-glow rounded-full border-2 border-white/20 hover:border-white/40 font-space font-semibold">
               <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
               Get Started
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />

@@ -23,9 +23,9 @@ export default function HomePage() {
       <IndustriesSection />
       <ServicesSection />
       <HowItWorksSection />
-      <StatsAndIntegrationsSection />
+       {/*<StatsAndIntegrationsSection />
       <TestimonialsSection />
-      <PricingSection />
+      <PricingSection /> */}
       <FaqSection />
       <ContactSection />
       <CtaSection />

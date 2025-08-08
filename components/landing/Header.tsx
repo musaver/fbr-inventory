@@ -24,12 +24,21 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="hover:text-foreground transition-smooth">Features</a>
             <a href="#industries" className="hover:text-foreground transition-smooth">Industries</a>
-            <a href="#pricing" className="hover:text-foreground transition-smooth">Pricing</a>
+            <a href="#whychooseus" className="hover:text-foreground transition-smooth">Why Choose Us</a>
+            
+            <a href="#faq" className="hover:text-foreground transition-smooth">FAQ</a>
+            <a href="#contact" className="hover:text-foreground transition-smooth">Contact Us</a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="rounded-full">Sign In</Button>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 transition-smooth rounded-full">
+      
+            {/*<Button variant="ghost" size="sm" className="rounded-full">Sign In</Button>*/}
+            <Button onClick={() => {
+              const contactSection = document.getElementById('contact');
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'instant' });
+              }
+            }} size="sm" className="bg-primary hover:bg-primary/90 transition-smooth rounded-full">
               Get Started
             </Button>
           </div>

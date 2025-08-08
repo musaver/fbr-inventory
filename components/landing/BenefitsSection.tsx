@@ -18,7 +18,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <Section className="dark bg-gradient-subtle text-white">
+    <Section id="whychooseus" className="dark bg-gradient-subtle text-white">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         
         <div className="space-y-8">

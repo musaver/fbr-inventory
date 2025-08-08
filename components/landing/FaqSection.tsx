@@ -40,7 +40,7 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <Section>
+    <Section id="faq">
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-4 mb-16">
           <Badge variant="secondary" className="rounded-full px-4 py-2">
@@ -54,14 +54,14 @@ export function FaqSection() {
           </p>
         </div>
 
-        <Card className="border-0 shadow-soft rounded-3xl">
-          <CardContent className="p-8">
+        <Card className="border-0">
+          <CardContent className="">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem 
                   key={index} 
                   value={`item-${index}`} 
-                  className="border border-border rounded-2xl px-6 py-2"
+                  className="border border-border shadow-soft rounded-2xl px-6 py-2"
                 >
                   <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
                     {faq.question}
