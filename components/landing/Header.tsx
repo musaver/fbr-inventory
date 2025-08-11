@@ -1,7 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,10 +18,7 @@ export function Header() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">H360</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">Hisaab360</span>
+            <Image className="rounded-lg" src={logo} alt="Hisaab360" width={170} height={100} />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -33,14 +33,9 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
       
             {/*<Button variant="ghost" size="sm" className="rounded-full">Sign In</Button>*/}
-            <Button onClick={() => {
-              const contactSection = document.getElementById('contact');
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'instant' });
-              }
-            }} size="sm" className="bg-primary hover:bg-primary/90 transition-smooth rounded-full">
-              Get Started
-            </Button>
+            <a href="https://app.hisaab360.com/" target="_blank" className="bg-primary hover:bg-primary/90 transition-smooth rounded-full text-white px-3 py-2 ">
+              Login
+            </a>
           </div>
 
           <button
@@ -61,10 +56,7 @@ export function Header() {
               <a href="#industries" className="hover:text-foreground transition-smooth py-2">Industries</a>
               <a href="#pricing" className="hover:text-foreground transition-smooth py-2">Pricing</a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">
-                <Button variant="ghost" size="sm" className="rounded-full">Sign In</Button>
-                <Button size="sm" className="bg-primary hover:bg-primary/90 transition-smooth rounded-full">
-                  Get Started
-                </Button>
+                <a href="https://app.hisaab360.com/" target="_blank" className="rounded-full">Sign In</a>
               </div>
             </nav>
           </div>

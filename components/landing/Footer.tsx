@@ -1,3 +1,5 @@
+import Image from "next/image";
+import logo from "@/assets/logo.png";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -8,10 +10,8 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-11 h-11 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">H360</span>
-              </div>
-              <span className="font-bold text-xl">Hisaab360</span>
+            <Image className="rounded-lg" src={logo} alt="Hisaab360" width={150} height={100} />
+         
             </div>
             <p className="text-background/70 leading-relaxed">
               Streamline your inventory management with our comprehensive solution designed for modern businesses.

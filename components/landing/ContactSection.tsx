@@ -123,7 +123,7 @@ export function ContactSection() {
               <Button 
                 type="submit" 
                 size="lg" 
-                className="w-full bg-white text-primary hover:bg-white/90 transition-smooth rounded-full"
+                className="w-full bg-white text-black hover:bg-white/90 transition-smooth rounded-full"
               >
                 Request Demo
               </Button>
