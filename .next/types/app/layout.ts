@@ -1,4 +1,4 @@
-// File: /Users/musaver/Desktop/fbr-inventory-hadi/stock-zen-landing-main/app/layout.tsx
+// File: /Users/musaver/Desktop/fbr-inventory-hadi/landing-page/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
